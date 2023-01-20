@@ -4,5 +4,7 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"cmake.buildDirectory": "${workspaceFolder}/build/${variant:board}-${variant:buildType}"
+	}
 }

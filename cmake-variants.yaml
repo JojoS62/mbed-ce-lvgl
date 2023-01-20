@@ -14,10 +14,20 @@ buildType:
       long: Optimize generated code
       buildType: Release
 board:
-  default: YOUR_MBED_TARGET
+  default: ROBOTDYN_F303CC
   choices:
-    YOUR_MBED_TARGET:
-      short: YOUR_MBED_TARGET
+    NUCLEO_G071RB:
+      short: NUCLEO_G071RB
       settings:
-        MBED_TARGET: YOUR_MBED_TARGET
-        UPLOAD_METHOD: YOUR_UPLOAD_METHOD
+        MBED_TARGET: NUCLEO_G071RB
+        UPLOAD_METHOD: NONE    
+    ROBOTDYN_F303CC:
+      short: ROBOTDYN_F303CC
+      settings:
+        MBED_TARGET: ROBOTDYN_F303CC
+        UPLOAD_METHOD: NONE    
+    BLACKPILL_F411CE:
+      short: BLACKPILL_F411CE
+      settings:
+        MBED_TARGET: BLACKPILL_F411CE
+        UPLOAD_METHOD: NONE

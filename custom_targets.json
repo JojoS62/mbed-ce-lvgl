@@ -1,0 +1,20 @@
+{
+    "ROBOTDYN_F303CC": {
+      "inherits": ["MCU_STM32F303xC"],
+      "device_name": "STM32F303CCTx",
+      "overrides": {
+        "clock_source": "USE_HSE_XTAL | USE_PLL_HSI"
+        },
+        "config": {
+            "hse_value": {
+                "value": "8000000",
+                "macro_name": "HSE_VALUE"
+            }
+        },
+        "device_has_add": [
+            "SERIAL_ASYNCH",
+            "FLASH",
+            "USBDEVICE"
+        ]
+    }
+}
