@@ -7,6 +7,7 @@ set(MBED_APP_JSON_PATH mbed_app.json)
 set(CUSTOM_TARGETS_JSON_PATH custom_targets.json) # This activates the custom targets in custom_targets.json
 set(MBED_MEMAP_DEPTH 4)
 set(LIB_PATH "${CMAKE_CURRENT_SOURCE_DIR}/libs/")
+set(MICROPY_DIR TRUE)                       # force lvgl to create an interface lib
 
 include(mbed-os/tools/cmake/app.cmake)
 
@@ -14,9 +15,11 @@ include(mbed-os/tools/cmake/app.cmake)
 # This needs to be done before add_subdirectory(mbed-os).
 add_subdirectory(custom_targets)
 add_subdirectory(mbed-os)
+add_subdirectory(${LIB_PATH} libs)
 
 project(test-lvgl)
 
 add_subdirectory(app-blinky)
+add_subdirectory(app-thermostat)
 
 mbed_finalize_build()

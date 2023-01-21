@@ -6,6 +6,6 @@
 	],
 	"settings": {
 		"cmake.buildDirectory": "${workspaceFolder}/build/${variant:board}-${variant:buildType}",
-		"cortex-debug.variableUseNaturalFormat": false
+		"cortex-debug.variableUseNaturalFormat": true
 	}
 }

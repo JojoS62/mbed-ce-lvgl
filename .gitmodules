@@ -4,3 +4,6 @@
 [submodule "libs/lvgl"]
 	path = libs/lvgl
 	url = https://github.com/lvgl/lvgl.git
+[submodule "libs/lvglDriver"]
+	path = libs/lvglDriver
+	url = https://github.com/JojoS62/lvglDriver.git
