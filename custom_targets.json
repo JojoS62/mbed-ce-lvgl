@@ -3,7 +3,7 @@
       "inherits": ["MCU_STM32F303xC"],
       "device_name": "STM32F303CCTx",
       "overrides": {
-        "clock_source": "USE_HSE_XTAL | USE_PLL_HSI"
+        "clock_source": "USE_PLL_HSE_XTAL"
         },
         "config": {
             "hse_value": {

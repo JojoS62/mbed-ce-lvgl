@@ -5,6 +5,8 @@ cmake_policy(VERSION 3.19)
 # Note: This block must be before the include of app.cmake
 set(MBED_APP_JSON_PATH mbed_app.json)
 set(CUSTOM_TARGETS_JSON_PATH custom_targets.json) # This activates the custom targets in custom_targets.json
+set(MBED_MEMAP_DEPTH 4)
+set(LIB_PATH "${CMAKE_CURRENT_SOURCE_DIR}/libs/")
 
 include(mbed-os/tools/cmake/app.cmake)
 
@@ -15,13 +17,6 @@ add_subdirectory(mbed-os)
 
 project(test-lvgl)
 
-# add subdirectories and build targets here
-add_executable(app-blinky app-blinky/main.cpp)
-target_link_libraries(app-blinky  
-#     mbed-os
-    mbed-baremetal
-) # Can also link to mbed-baremetal here
-
-mbed_set_post_build(app-blinky )
+add_subdirectory(app-blinky)
 
 mbed_finalize_build()
