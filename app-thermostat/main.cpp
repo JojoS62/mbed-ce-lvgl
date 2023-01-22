@@ -1,6 +1,7 @@
 #include "mbed.h"
 #include "lvgl.h"
 #include "LVGLDispDriver_ILI9341.h"
+#include "gui/ui.h"
 
 DigitalOut led(LED1);
 DigitalOut testPin(PA_4);
@@ -91,8 +92,9 @@ int main()
 
     tickerLvgl.attach(&fnLvTicker, 2ms);
 
-    create_lv_screen(lvglDisplay.getLVDisp());
-
+    // create_lv_screen(lvglDisplay.getLVDisp());
+    ui_init();
+    
 	while(true) {
 		led = !led;
 		testPin = !testPin;

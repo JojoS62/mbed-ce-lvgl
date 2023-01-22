@@ -6,6 +6,14 @@
 	],
 	"settings": {
 		"cmake.buildDirectory": "${workspaceFolder}/build/${variant:board}-${variant:buildType}",
-		"cortex-debug.variableUseNaturalFormat": true
+		"cortex-debug.variableUseNaturalFormat": true,
+		"files.associations": {
+			"*.cpp": "cpp",
+			"*.htm": "html",
+			"*.html": "html",
+			"ui.h": "c",
+			"lvgl.h": "c",
+			"ui_comp.h": "c"
+		}
 	}
 }
