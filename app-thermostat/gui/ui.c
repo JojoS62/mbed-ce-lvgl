@@ -652,7 +652,7 @@ void ui_Call_screen_init(void)
     lv_obj_clear_flag(ui_Phone2, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     ui_Avatar = lv_img_create(ui_Call);
-    lv_img_set_src(ui_Avatar, &ui_img_avatar_png);
+    // lv_img_set_src(ui_Avatar, &ui_img_avatar_png);
     lv_obj_set_width(ui_Avatar, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Avatar, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_Avatar, 0);
@@ -932,7 +932,7 @@ void ui_Music_Player_screen_init(void)
     lv_obj_clear_flag(ui_Play, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     ui_Album = lv_img_create(ui_Music_Player);
-    lv_img_set_src(ui_Album, &ui_img_album_png);
+    // lv_img_set_src(ui_Album, &ui_img_album_png);
     lv_obj_set_width(ui_Album, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Album, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_Album, 0);

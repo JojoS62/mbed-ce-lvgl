@@ -6,8 +6,8 @@ add_executable(thermostat
     gui/ui_comp.c 
     gui/ui_font_Number.c 
     gui/ui_helpers.c 
-    gui/ui_img_album_png.c 
-    gui/ui_img_avatar_png.c 
+    # gui/ui_img_album_png.c 
+    # gui/ui_img_avatar_png.c 
     gui/ui_img_backward_png.c 
     # gui/ui_img_chatbox_png.c 
     # gui/ui_img_chatbox2_png.c 
