@@ -75,12 +75,8 @@ void create_lv_screen(lv_disp_t* disp)
     lv_obj_center(label);                                           /*Align the label to the center*/
 }
 
-
-
 int main()
 {
-    DeepSleepLock lock;
-    
     printf("Test lvgl thermostat\n");
     printf("Hello from "  MBED_STRINGIFY(TARGET_NAME) "\n");
     printf("Mbed OS version: %d.%d.%d\n\n", MBED_MAJOR_VERSION, MBED_MINOR_VERSION, MBED_PATCH_VERSION);
@@ -88,13 +84,13 @@ int main()
 	SPI spi(PB_5, PB_4, PB_3);
 	spi.frequency(20'000'000);
 	
-    LVGLDispILI9341  lvglDisplay(spi, PA_15, PB_6, PB_7, PA_12, 10);
+    LVGLDispILI9341  lvglDisplay(spi, PA_4, PB_6, PB_7, PA_12, 10, 240, 320);
 
     tickerLvgl.attach(&fnLvTicker, 2ms);
 
     // create_lv_screen(lvglDisplay.getLVDisp());
     ui_init();
-    
+
 	while(true) {
 		led = !led;
 		testPin = !testPin;
