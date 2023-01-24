@@ -1,10 +1,10 @@
 // SquareLine LVGL GENERATED FILE
 // EDITOR VERSION: SquareLine Studio 1.2.0
 // LVGL VERSION: 8.2.0
-// PROJECT: Thermostat
+// PROJECT: Smart_Gadget
 
-#ifndef _THERMOSTAT_UI_HELPERS_H
-#define _THERMOSTAT_UI_HELPERS_H
+#ifndef _SMART_GADGET_UI_HELPERS_H
+#define _SMART_GADGET_UI_HELPERS_H
 
 #include "ui.h"
 
